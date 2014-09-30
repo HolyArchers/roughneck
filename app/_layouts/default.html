@@ -6,6 +6,11 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- build:css({app,.tmp}) /css/main.css -->
         <!-- Syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
@@ -17,9 +22,11 @@
     </head>
     <body>
 
-      Roughneck Design
-          {{ content }}
-
+    {% include header.html %}
+      {{ content }}
+    {% include footer.html %}
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
     <!-- endbuild -->

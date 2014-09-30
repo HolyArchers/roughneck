@@ -254,7 +254,8 @@ module.exports = function (grunt) {
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
-            'CNAME'
+            'CNAME',
+            'img/jumbotron.jpg'
             // Explicitly add any files your site needs for distribution here.
             //'_bower_components/jquery/jquery.js',
             //'favicon.ico',
